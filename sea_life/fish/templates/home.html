@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %} Sea Life Fish {% endblock header %}
+
+{% block content %}
+
+    <ul>
+        {% for single_fish in fish %}
+            <li>{{ single_fish.name }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}
